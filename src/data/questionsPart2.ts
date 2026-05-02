@@ -496,7 +496,7 @@ export const questionsPart2 = [
   },
   {
     "id": 76,
-    "text": "Consider the following trigger:\nAssume that the current value of the @classCount is 4.\nWhat is the value of the @classCount after executing the following query?\n\nINSERT INTO class(descr,class_id,trainer)\nVALUES\n('BC3JV',NULL,'anna@peoplecert.org'),\n('BC3CS',NULL,'nikos@peoplecert.org');",
+    "text": "Consider the following trigger:\nAssume that the current value of the @classCount is 4.\nWhat is the value of the @classCount after executing the following query?\n\nINSERT INTO class(descr,class_id,trainer)\nVALUES\n('BC3JV',NULL,'anna@softdev.org'),\n('BC3CS',NULL,'nikos@softdev.org');",
     "codeSnippet": "CREATE TRIGGER my_count\nAFTER INSERT ON class\nFOR EACH ROW\nSET @classCount = @classCount+1;",
     "language": "sql",
     "options": [
