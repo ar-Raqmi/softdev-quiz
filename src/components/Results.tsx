@@ -255,7 +255,7 @@ export default function Results() {
         <div className="mt-8 border border-pc-dark3 bg-black p-5 text-left font-mono text-[11px] leading-relaxed text-pc-gray">
           <div className="flex gap-2">
              <span className="text-pc-cyan">$</span>
-             <span className="text-white font-bold">quiz-engine</span> --results --subject "Advanced Python"
+             <span className="text-white font-bold">quiz-engine</span> --results --subject "Advanced Programming"
           </div>
           <div className="mt-1">
             <span className={passed ? 'text-pc-correct' : 'text-pc-wrong'}>[{passed ? 'PASSED' : 'FAILED'}]</span> Score: {score}/{total} ({percentage}%)
