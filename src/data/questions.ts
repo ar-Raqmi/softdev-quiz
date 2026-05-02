@@ -16,11 +16,11 @@ export type Option = {
 export type Question = {
   id: number;
   text: string;
-  tag?: string;
   codeSnippet?: string;
   language?: string;
   imageDescription?: string;
   diagram?: string;
+  mermaidCode?: string;
   tables?: TableSchema[];
   options: Option[];
   correctAnswer: string;

@@ -1,17 +1,24 @@
-import { useState } from 'react';
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { useState, useCallback } from 'react';
 import { QuizProvider, useQuiz } from './context/QuizContext';
 import MainMenu from './components/MainMenu';
 import ActiveQuiz from './components/ActiveQuiz';
 import ReviewGrid from './components/ReviewGrid';
 import Results from './components/Results';
-import { TerminalBoot } from './components/TerminalBoot';
+import BootScreen from './components/BootScreen';
 
 function QuizApp() {
-  const [booted, setBooted] = useState(false);
   const { appState } = useQuiz();
+  const [bootCompleted, setBootCompleted] = useState(false);
 
-  if (!booted) {
-    return <TerminalBoot onComplete={() => setBooted(true)} />;
+  const handleBootComplete = useCallback(() => setBootCompleted(true), []);
+
+  if (!bootCompleted) {
+    return <BootScreen onComplete={handleBootComplete} />;
   }
 
   switch (appState) {

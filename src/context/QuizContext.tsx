@@ -7,7 +7,7 @@ interface QuizContextType {
   appState: AppState;
   setAppState: (state: AppState) => void;
   startPractice: () => void;
-  startExam: () => void;
+  startExam: (shuffle?: boolean) => void;
   currentQuestions: Question[];
   currentQuestionIndex: number;
   setCurrentQuestionIndex: (idx: number) => void;
@@ -55,8 +55,12 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     setTimerActive(false);
   };
 
-  const startExam = () => {
-    setCurrentQuestions([...questions]); // All questions
+  const startExam = (shuffle: boolean = false) => {
+    let finalQuestions = [...questions];
+    if (shuffle) {
+      finalQuestions = finalQuestions.sort(() => 0.5 - Math.random());
+    }
+    setCurrentQuestions(finalQuestions); // All questions
     setAppState('exam');
     setCurrentQuestionIndex(0);
     setAnswers({});
