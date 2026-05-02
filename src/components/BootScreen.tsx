@@ -13,7 +13,7 @@ const bootLines = [
   { text: '', delay: 1300 },
   { text: '<span class="text-pc-cyan">$</span> <span class="text-white font-bold">quiz-engine</span> <span class="text-pc-red">--subject</span> <span class="text-[#c3e88d]">"Advanced Programming"</span> <span class="text-pc-red">--load</span>', delay: 1400 },
   { text: '<span class="text-pc-cyan">[LOADING]</span> Initializing question bank...', delay: 1600 },
-  { text: '<span class="text-pc-cyan">[LOADING]</span> Parsing 51 questions...', delay: 1900 },
+  { text: '<span class="text-pc-cyan">[LOADING]</span> Parsing 105 questions...', delay: 1900 },
   { text: '<span class="text-pc-correct font-bold">[READY]</span> Quiz engine initialized.', delay: 2200 },
 ];
 
