@@ -1119,7 +1119,7 @@ export const questionsPart2 = [
       },
       {
         "id": "D",
-        "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<contact-info>\n  <address category=\"residence\">\n    <name>Anna Maria</name>\n    <company>AFDEMP</company>\n    <phone>(210) 123-4567</phone>\n  </address>\n</contact-info>"
+        "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<contact-info>\n  <address category=\"residence\">\n    <name>Anna Maria</Nname>\n    <company>AFDEMP</company>\n    <phone>(210) 123-4567</phone>\n  </address>\n</contact-info>"
       }
     ],
     "correctAnswer": "D"

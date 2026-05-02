@@ -532,7 +532,7 @@ const questions = [
       { id: 'A', code: '<?xml version="1.0" encoding="UTF-8"?>\n<contact-info>\n  <address category="residence">\n    <name>Anna Maria</name>\n    <company>AFDEMP</company>\n    <phone>(210) 123-4567</phone>\n  </address>\n</contact-info>' },
       { id: 'B', code: '<?xml version="1.0" encoding="UTF-8"?>\n<breakfast_menu>\n<food>\n  <name>Belgian Waffles</name>\n  <price>$5.95</price>\n  <descr>Two of our famous Belgian Waffles & real maple syrup</descr>\n  <calories>650</calories>\n</food>\n</breakfast_menu>' },
       { id: 'C', code: '<?xml version="1.0" encoding="UTF-8"?>\n<breakfast_menu>\n<food>\n  <name>Belgian Waffles Trio</name>\n  <price>$6.95</price>\n  <descr>Three of our famous Belgian Waffles & real maple syrup</descr>\n  <calories>950</calories>\n</food>\n</breakfast_menu>' },
-      { id: 'D', code: '<?xml version="1.0" encoding="UTF-8"?>\n<contact-info>\n  <address category="residence">\n    <name>Anna Maria</name>\n    <company>AFDEMP</company>\n    <phone>(210) 123-4567</phone>\n  </address>\n</contact-info>' }
+      { id: 'D', code: '<?xml version="1.0" encoding="UTF-8"?>\n<contact-info>\n  <address category="residence">\n    <name>Anna Maria</Nname>\n    <company>AFDEMP</company>\n    <phone>(210) 123-4567</phone>\n  </address>\n</contact-info>' }
     ],
     correctAnswer: 'D'
   },
